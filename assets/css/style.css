@@ -1,3 +1,4 @@
+
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
 body{
     background-color: rgba(18,18,18,1);
@@ -49,3 +50,10 @@ font-family: 'Gotham Bold', sans-serif;
 .dots{
     color: white;
 }
+
+.navbar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+  }
+
