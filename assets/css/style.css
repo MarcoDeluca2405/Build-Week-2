@@ -1,0 +1,50 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-bold');
+body{
+    background-color: rgba(18,18,18,1);
+}
+.bgbg{
+    background: rgb(0,0,0);
+background: linear-gradient(6deg, rgba(0,0,0,1) 38%, rgba(18,18,18,1) 76%);
+font-family: 'Gotham Bold', sans-serif;
+}
+.play{
+    background-color: rgb(14, 192, 14);
+    width: 5em;
+    color: black;
+    font-weight: 500;
+    border-radius: 20rem;
+    border:none;
+    margin-right: 10px;
+}
+
+.salva{
+    width: 5em;
+    color: white;
+    font-weight: 500;
+    border-radius: 20rem;
+    border-color: rgb(165, 165, 165);
+    margin-right: 10px;
+}
+
+.salva:hover{
+    border-color: white;
+    transform: scale(1.1);
+}
+
+.play:hover{
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+.canzone{
+    margin-right: 20px;
+}
+.annunci{
+    border-radius: 30px;
+    border: none;
+    color: rgb(167, 167, 167);
+    background-color: rgb(29, 29, 29);
+    font-size: 0.8rem;
+}
+.dots{
+    color: white;
+}
