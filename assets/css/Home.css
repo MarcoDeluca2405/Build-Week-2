@@ -1,9 +1,7 @@
 .navbar {
-  position: fixed;
   left: 0;
   height: 100%;
   align-items: flex-start;
-  width: 30%;
 }
 .navbar .container-fluid {
   align-items: flex-start;
