@@ -2,9 +2,7 @@
   left: 0;
   height: 100%;
   align-items: flex-start;
-}
-.navbar .container-fluid {
-  align-items: flex-start;
+  color: gray;
 }
 .navbar .container-fluid a {
   display: flex;
@@ -19,4 +17,13 @@
 }
 .navbar #divisore {
   margin: 0 0 0 0;
+}
+
+.hmcont {
+  position: absolute;
+  top: 0px;
+  left: 214px;
+}
+.hmcont .cardImg img {
+  height: 100%;
 }/*# sourceMappingURL=Home.css.map */
