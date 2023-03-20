@@ -4,10 +4,24 @@ body{
     background-color: rgba(18,18,18,1);
     color: white;
 }
-.bgbg{
+
+
+.navbar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+  }
+  
+
+  /* Carta Top */
+
+  .bgbg{
     background: rgb(0,0,0);
-background: linear-gradient(6deg, rgba(0,0,0,1) 38%, rgba(18,18,18,1) 76%);
-font-family: 'Gotham Bold', sans-serif;
+    background: linear-gradient(6deg, rgba(0,0,0,1) 38%, rgba(18,18,18,1) 76%);
+    font-family: 'Gotham Bold', sans-serif;
+    border: none;
+    border-radius: none;
+    width: 100%;
 }
 .play{
     background-color: rgb(14, 192, 14);
@@ -16,7 +30,6 @@ font-family: 'Gotham Bold', sans-serif;
     font-weight: 500;
     border-radius: 20rem;
     border:none;
-    margin-right: 10px;
 }
 
 .salva{
@@ -25,7 +38,6 @@ font-family: 'Gotham Bold', sans-serif;
     font-weight: 500;
     border-radius: 20rem;
     border-color: rgb(165, 165, 165);
-    margin-right: 10px;
 }
 
 .salva:hover{
@@ -51,9 +63,19 @@ font-family: 'Gotham Bold', sans-serif;
     color: white;
 }
 
-.navbar {
-    position: fixed;
-    left: 0;
+  .Topcard{
+    width: 100%;
+  }
+  .immargin{
+    width: 200px;
+    height: 200px;
+  }
+  .image_t{
+    width: 100%;
     height: 100%;
   }
+
+  
+ 
+
 
