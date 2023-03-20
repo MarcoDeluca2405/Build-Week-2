@@ -1,0 +1,30 @@
+$biMargin:0.8rem;
+
+.navbar {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    align-items: flex-start;
+    width: 30%;
+    
+
+    .container-fluid {
+        
+        align-items: flex-start;
+
+        a {
+            display: flex;
+            margin-bottom: 0.2rem;
+            font-size: 1rem;
+            .bi{
+                margin-right: $biMargin;
+            }
+            svg{
+                margin-right: 0.4rem;
+            }
+        }
+    }
+#divisore{
+    margin:0 0 0 0 ;
+}
+}
