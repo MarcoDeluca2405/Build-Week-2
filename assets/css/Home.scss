@@ -5,11 +5,10 @@ $biMargin:0.8rem;
     left: 0;
     height: 100%;
     align-items: flex-start;
+    color:gray;
     
 
     .container-fluid {
-        
-        align-items: flex-start;
 
         a {
             display: flex;
@@ -26,4 +25,14 @@ $biMargin:0.8rem;
 #divisore{
     margin:0 0 0 0 ;
 }
+}
+.hmcont{
+    position: absolute;
+    top: 0px;
+    left: 214px;
+    .cardImg{
+        img{
+            height:100%;
+        }
+    }
 }
