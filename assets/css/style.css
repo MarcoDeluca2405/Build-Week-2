@@ -57,6 +57,37 @@ font-family: 'Gotham Bold', sans-serif;
     height: 100%;
   }
 
+
+  #uno{
+    position: absolute;
+    width: 20vw;
+    top: 0;
+    left: 0;
+}
+
+#container{
+    position: relative;
+}
+
+#due{
+    position: absolute;
+    left: 9em;
+    float: left;
+    right: 140px;
+}
+#tre{
+    position: fixed;
+    right: 0;
+}
+
+#unoC{
+    position: fixed;
+}
+#quattro{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+=======
 .ciao{
     position: fixed;
     top:0;
@@ -87,4 +118,5 @@ font-family: 'Gotham Bold', sans-serif;
 }
 #center{
     margin: 0 auto;
+
 }
