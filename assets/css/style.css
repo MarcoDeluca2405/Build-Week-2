@@ -154,26 +154,17 @@ body{
   .topnav{
     height:50px; 
     width: 100%; 
-    position: fixed; 
     z-index: 1; 
     top: 0; 
-    left: 300px;
     background-color: rgb(29, 29, 29); 
     overflow-x: hidden;
+    position: sticky;
+    top: 0;
   }
   .bottone{
     background-color: #818181;
     border-radius:50% ;
   }
-
-
-
-
-
-
-  
- 
-
 
 
   #uno{
@@ -189,13 +180,14 @@ body{
 
 #due{
     position: absolute;
-    left: 9em;
+    left: 14.4em;
     float: left;
     right: 140px;
 }
 #tre{
     position: fixed;
     right: 0;
+    width: 135px;
 }
 
 #unoC{
@@ -238,3 +230,22 @@ body{
     margin: 0 auto;
 
 }
+
+.cards-row{
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+
+#topCont{
+    display: flex;
+    justify-content: space-between;
+}
+
+#unoA{
+    width: 73vw;
+    position: absolute;
+    left: 14.4em;
+    z-index: 100;
+    position: fixed;
+}
+
