@@ -2,7 +2,8 @@
   left: 0;
   height: 100%;
   align-items: flex-start;
-  color: gray;
+  color: rgb(255, 255, 255);
+  background-color: black
 }
 .navbar .container-fluid a {
   display: flex;
@@ -27,3 +28,6 @@
 .hmcont .cardImg img {
   height: 100%;
 }/*# sourceMappingURL=Home.css.map */
+a{
+  color: white;
+}
