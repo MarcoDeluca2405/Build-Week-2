@@ -3,6 +3,7 @@
   height: 100%;
   align-items: flex-start;
   color: gray;
+  background-color: black;
 }
 .navbar .container-fluid a {
   display: flex;
