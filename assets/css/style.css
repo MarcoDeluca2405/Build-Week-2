@@ -220,3 +220,21 @@ body{
 .icon-pr{
     font-size: 15px;
 }
+.form-control{
+    height: 26px;
+}
+.btn-my{
+    font-size: 10px;
+}
+.img{
+    width: 40px;
+}
+.card-title{
+    width: 100px;
+    height: 20px;
+    
+}
+.card-text{
+    width: 100px;
+    height: 20px;
+}
