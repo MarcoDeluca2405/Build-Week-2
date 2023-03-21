@@ -225,23 +225,21 @@ body{
 .icon-pr{
     font-size: 15px;
 }
-
-.bgbgAlbum{
-    background: transparent;
-    border: none;
+.form-control{
+    height: 26px;
 }
-.topnavAlbum{
-    background: transparent;
+.btn-my{
+    font-size: 10px;
 }
-.play2{
-    border-radius: 50%;
-    background-color: rgb(14, 192, 14);
-    color: black;
-    border:none;
-    width: 75px;
-    height: 75px;
+.img{
+    width: 40px;
 }
-.albumlist{
-    background: rgb(29, 29, 29 ,0.3);
-    height: 100%;
+.card-title{
+    width: 100px;
+    height: 20px;
+    
+}
+.card-text{
+    width: 100px;
+    height: 20px;
 }
