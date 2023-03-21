@@ -2,13 +2,13 @@
   left: 0;
   height: 100%;
   align-items: flex-start;
-  color: rgb(255, 255, 255);
-  background-color: black
+  color: gray;
 }
 .navbar .container-fluid a {
   display: flex;
   margin-bottom: 0.2rem;
   font-size: 1rem;
+  color: gray;
 }
 .navbar .container-fluid a .bi {
   margin-right: 0.8rem;
@@ -28,6 +28,3 @@
 .hmcont .cardImg img {
   height: 100%;
 }/*# sourceMappingURL=Home.css.map */
-a{
-  color: white;
-}
