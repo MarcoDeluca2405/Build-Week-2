@@ -97,18 +97,7 @@ body{
 
 
   .topnav{
-    margin-top: 20px;
-    height:50px; 
-    width: 100%; 
-    z-index: 1; 
-    top: 0; 
-    background-color: rgb(29, 29, 29); 
-    overflow-x: hidden;
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+display:none;
   }
   .bottone{
     background-color: #818181;
@@ -117,7 +106,7 @@ body{
 
 
   #uno{
-    position: absolute;
+    display:none;
     width: 20vw;
     top: 0;
     left: 0;
@@ -128,19 +117,12 @@ body{
     position: relative;
 }
 
-#due{
-    position: absolute;
-    left: 14.4em;
-    float: left;
-    right: 209px;
-}
+/*#due{
+    
+
+}*/
 #tre{
-    position: fixed;
-    right: 0;
-    height: 100%;
-    width: 200px;
-    top: 0;
-    z-index: 3;
+display: none;
 }
 .ciao{
     position: fixed;
@@ -179,13 +161,14 @@ body{
 }
 #footer{
     border-top: 0.5px solid rgb(75, 75, 75);
-    height: 80px;
+    height: 50px;
     width: 100%;
     background-color:#181818 ;
     position: fixed;
     bottom: 0;
     font-size: 10px;
     z-index: 1000000000000000;
+    left:0;
 }
 #center{
     margin: 0 auto;
@@ -257,3 +240,71 @@ body{
     
 }
 
+.playerFooter{
+    display: flex;
+    align-items: center;
+    margin: 0 0.5em 0 1em;
+    font-size: 2em;
+    justify-content: space-between;
+    height: 100%;
+}
+.playerFooter p{
+    font-size: 0.6em;
+}
+.playerIcons{
+    display: flex;
+    justify-content: space-between;
+    width:5em;
+}
+.playerLarge{
+    display:none;
+}
+
+
+@media screen and (min-width:700px) {
+    #uno{
+position: absolute;
+display:block;
+    }
+    #due{
+       position: absolute;
+       left: 14.4em;
+   float: left;
+   right: 209px;
+    }
+    #tre{
+       display:block;
+           position: fixed;
+   right: 0;
+   height: 100%;
+   width: 200px;
+   top: 0;
+   z-index: 3;
+    }
+    .topnav{
+       margin-top: 20px;
+       height:50px; 
+       width: 100%; 
+       z-index: 1; 
+       top: 0; 
+       background-color: rgb(29, 29, 29); 
+       overflow-x: hidden;
+       position: sticky;
+       top: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .playerLarge{
+        margin:0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .playerFooter{
+        display:none
+    }
+    #footer{
+        height:70px;
+    }
+  
+   }
