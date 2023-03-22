@@ -256,4 +256,19 @@ body{
     width: 40px;
 }
 
+.play2{
+    background-color:rgb(5, 178, 36) ;
+    border-radius: 100%;
+}
+.bgbgAlbum{
+    border: none;
+    background: transparent;
+}
+.albumlist{
+
+    background-color: rgb(29, 29, 29, 0.2);
+    height: fit-content;
+    
+    
+}
 
