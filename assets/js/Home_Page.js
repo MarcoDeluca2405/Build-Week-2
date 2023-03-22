@@ -19,8 +19,11 @@ let Nameartist= await responsive.json();
 let item=await Nameartist.data;
 console.log(item);
 item.forEach(element => {
-    artistArray.push(element);
+    if(((element.artist.name).toLowerCase()).includes((input_search.value).toLowerCase())){
+        artistArray.push(element);
         getListArtist(element);
+    }
+
 });
 
 
@@ -49,7 +52,6 @@ row.innerHTML+=`
 </div>
 <h5 class="card-title my-0 overflow-hidden">${getItem.artist.name}</h5>
 <h5 class="card-title my-0 overflow-hidden">${getItem.album.title}</h5>
-    <p class="card-text my-0">dsff</p>
     <a href="#" class="btn-sm btn-dark my-0">Vai</a>
   </div>
 
