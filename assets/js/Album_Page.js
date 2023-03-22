@@ -28,13 +28,35 @@ function fillpage(cirio){
         cica = Math.ceil(eval(cirio[index].duration)/60)
         cico = eval([index+1])
 
-        Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoveraggio" >
-        <div class="d-flex"><span class="numberAlbum pt-2" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a href="">${cirio[index].artist.name}m</a></span> </span> </div>  <div class="Minutaggio pt-2">${cica}</div>
+        Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
+        <div class="d-flex"><span class="numberAlbum pt-2" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a href="">${cirio[index].artist.name}</a></span> </span> </div> 
+                <div  class="d-flex"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
+                    <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> 
+                            
+                             </div>
+                                <div id="cuoreNO${index}" onclick=riempi(${index}) class="d-none me-3 pt-2 "><i class="bi bi-heart-fill"></i> </div>
+                             
+                             <div class="Minutaggio pt-2">${cica}m</div>
+        
+        </div>
      </div>`
         
     }
 }
 
+function riempi(par) {
+    let cuorep = document.getElementById(`cuorepieno${par}`);
+    let cuoreN = document.getElementById(`cuoricino${par}`);
+    let cuoreno = document.getElementById(`cuoreNO${par}`)
+    cuorep.classList.toggle('bi-heart');
+    cuoreN.classList.toggle('d-none');
+    cuoreno.classList.toggle('d-none');
+    
+}
 
+function hoverh(par) {
+    let cuore = document.getElementById(`cuoricino${par}`);
+       cuore.classList.toggle('d-none');
+}
 
 
