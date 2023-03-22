@@ -257,3 +257,13 @@ body{
 }
 
 
+#buttonHover{
+    transition:box-shadow 0.5s linear;
+}
+
+#buttonHover:hover{
+    -webkit-box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
+    -moz-box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
+    -o-box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
+    box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
+}
