@@ -1,3 +1,4 @@
+
 const input_search=document.getElementById("input_search");
 const url="https://striveschool-api.herokuapp.com/api/deezer/search/?q=";
 const id="?q={query}";
@@ -65,6 +66,7 @@ row.innerHTML+=`
 
 
 }
+
 
 
 
