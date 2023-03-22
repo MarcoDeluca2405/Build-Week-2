@@ -17,7 +17,7 @@
         <div id="container">
           <div id="uno">
               <div id="unoC">        
-                <nav class="navbar bg-body-dark">
+                <nav class="navbar bg-black pe-4">
       
                 <div class="principale">
                     <div class="container-fluid flex-column ms-0">
@@ -33,6 +33,7 @@
                             </svg>La tua libreria
                         </a>
                     </div>
+
                     <div class="second container-fluid flex-column ms-0">
                         <a class="navbar-brand" href="#"><i class="bi bi-plus-square"></i></i>Crea Playlist</a>
                         <a class="navbar-brand" href="#"><i class="bi bi-heart-fill"></i>Brani che ti
@@ -43,13 +44,19 @@
                 </div>
             </nav>
           </div>
-          </div>
+         </div>
           
           <div id="unoA">
       
             </div>
-          <div id="due">
-            <div class="topnav">
+
+
+
+
+          <div id="due" class="CentroAlbum" style="background: rgb(41,41,41);
+          background: linear-gradient(0deg, rgba(41,41,41,1) 41%, rgba(171,255,123,1) 100%);  height: 100vh;">
+
+            <div class="topnavalbum">
               <div id="topCont">
          <div><button class="btn bottone"><</button> <button class="btn bottone">></button></div>
           <select class="" name="boh" id="">BOH</select>
@@ -57,9 +64,9 @@
       
       </div>
       
-            <div class="card my-5 pb-4 text-white bgbg rounded-0">
+            <div class="card my-5 pb-4 text-white bgbgAlbum rounded-0" >
               
-               <div class="row g-0">
+               <div class="row g-0 ">
                   <div class="col-md-3 immargin me-3">
                      <img src="https://api.deezer.com/album/75621062/image"  class="img-fluid my-3 mx-3 image_t" alt="...">
                   </div>
@@ -70,36 +77,45 @@
                         <h1 class="card-title Big">VIOLA (feat. Salmo)</h1>
                         <p class="card-text">Fedez, Salmo</p>
                         <p class="card-text">Ascolta il nuovo singolo </p>
-                        <div>
-                           <a name="Playbutton" id="" class="btn play" href="#" role="button">Play</a>
-                           <a name="Savebutton" id="" class="btn bg-black salva " href="#" role="button">Salva</a>
-                           <a href="" class="dots">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                 class="bi bi-three-dots" viewBox="0 0 16 16">
-                                 <path
-                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
-                              </svg>
-                           </a>
-                        </div>
+                       
                      </div>
                   </div>
                </div>
             </div>
+
             
-      </div>
+               <div class="albumlist">
+                  <div style="height: 100px;">
+                  <a name="Playbutton" id="" class="btn play2" href="#" role="button">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                   </svg>
+                  </a>
+                  <a name="Savebutton" id="" class="save" href="#" role="button"><i class="bi bi-heart"></i></a>
+                  <a href="" class="dots">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                        <path
+                           d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                     </svg>
+                  </a>
+
+
+                  </div>
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste libero voluptate minima consequuntur iusto, ratione beatae accusamus excepturi commodi eaque fugiat nulla mollitia sequi distinctio quia quidem voluptatum pariatur cupiditate!
+               
+               </div>
+             
       <div id="tre">
-        <div id="treC">Parte destra fissa</div>
+        <div id="treC" class="bg-black">Parte destra fissa</div>
       
       </div>
-      <div id="quattro">
-        <div>Player</div>
+      
+      
+      
+      
       </div>
-      
-      
-      
-      
-      
-        </div>
       
       
       
