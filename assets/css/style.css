@@ -260,6 +260,11 @@ display: none;
     height: 60px;
     
 }
+.play2:hover{
+    color: black;
+    background-color: rgb(33, 172, 58);
+    
+}
 .playcenter{
     margin-top: 6px;
     margin-left: 2px;
