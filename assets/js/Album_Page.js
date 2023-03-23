@@ -1,14 +1,4 @@
 
-
-                
-
-
-        
-
-
-
-
-
 Lista = document.getElementById('lista');
 let ID = new URLSearchParams(window.location.search).get('id');
 console.log(ID)
