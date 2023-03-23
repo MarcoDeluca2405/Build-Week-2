@@ -65,7 +65,7 @@ referenzacarta.innerHTML= ` <div class="border border-0 " style="width: 100%; he
          <div class="card-img-overlay d-flex flex-column justify-content-end  align-items-start ms-3">
             <h5 class="card-text">☑️Artista verificato</h5>
           <h1 class="card-text titolo">${Scritta.artist.name}</h1>
-          <p class="card-text fs-5">${Scritta.rank}</p>
+          <p class="card-text fs-5">${Scritta.rank} ascoltatori</p>
           </div>
         </div>
       </div> `
