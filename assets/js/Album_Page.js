@@ -26,7 +26,6 @@ console.log(ID)
 console.log(Lista);
 
 urlprova = "https://striveschool-api.herokuapp.com/api/deezer/artist/412"
-'https://striveschool-api.herokuapp.com/api/deezer/album/75621062'
 
 
 
