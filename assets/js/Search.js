@@ -59,12 +59,7 @@ row.innerHTML+=`
 
 </div>
 </button>
-<object id="museca" data="${getItem.preview}" type="audio/mpeg">
-  <param name="autostart" value="false">
-  <param name="loop" value="false">
-  <param name="src" value="nome_file.mp3">
-</object>
-<hr>
+
 
 
 `;
