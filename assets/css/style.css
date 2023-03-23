@@ -289,6 +289,19 @@ display: none;
     transition:box-shadow 0.5s linear;
 }
 
+.navbar-brand{
+    border:none;
+    border-radius: 10px;
+transition: box-shadow 0.5s color 0.5s linear;
+}
+.navbar-brand:hover{
+    -webkit-box-shadow: inset 5px 5px 100px -92px #FFFFFF;
+    -moz-box-shadow: inset 5px 5px 100px -92px #FFFFFF;
+    -o-box-shadow: inset 5px 5px 100px -92px #FFFFFF;
+    box-shadow: inset 5px 5px 100px -92px #FFFFFF;
+    color: white;
+}
+
 .playerFooter{
     display: flex;
     align-items: center;
