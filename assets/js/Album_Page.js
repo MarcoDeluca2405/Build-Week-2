@@ -57,8 +57,9 @@ console.log()
 
 function fillpage2(params) {
     titolo = params.title;
+    console.log('titolo', titolo)
     document.getElementById('titotloAlbum').innerHTML = titolo;
-    document.getElementById('autoreAlbum').innerText = params.artist.name;
+    document.getElementById('autoreAlbum').innerHTML =`<a href="Artist_Page.html?id=${params.artist.id}">${params.artist.name}</a>`;
 }
 
 
@@ -76,7 +77,7 @@ function fillpage(cirio){
         cico = eval([index+1])
 
         Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
-        <div class="d-flex"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a href="">${cirio[index].artist.name}</a></span> </span> </div> 
+        <div class="d-flex"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a style="text-decoration:none;" href="Artist_Page.html?id=${cirio[index].artist.id}">${cirio[index].artist.name}</a></span> </span> </div> 
                 <div  class="d-flex"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
                     <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> 
                             
@@ -127,7 +128,7 @@ async function Controllo(params) {
         <a href="Album_Page.html?id=${(oggettovero[index].album).id}" class="card cartecanz hoveraggio col-2 my-2" style="width: 12rem;">
                <img src="${(oggettovero[index].album).cover}" class="card-img-top mt-2 " alt="...">
                <div class="card-body">
-                  <p class="card-text"><b class="d-block">${(oggettovero[index].title_short)}</b> <span>${(oggettovero[index].cover)}</span></p>
+                  <p class="card-text"><b class="d-block">${(oggettovero[index].title_short)}</b> </p>
                </div>
             </a> 
      `;
