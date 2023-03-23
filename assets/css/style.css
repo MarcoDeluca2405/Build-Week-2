@@ -441,6 +441,52 @@ display: none;
 .disc p{
     width: 8em;
 }
+#input_search::placeholder{
+    color:white;
+}
+#input_search{
+    background-color: rgba(51,51,51,0.4);
+    height:42px;
+    border-color: rgba(51,51,51,0.30);
+}
+
+.genereBtn{
+    width: 135px;
+    height: 80px;
+}
+
+.genereBtn span{
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    color: white;
+}
+
+.genere1{
+    background-color:rgb(225, 51, 0) ;
+}
+.genere2{
+    background-color:#1E3264 ;
+}
+.genere3{
+    background-color:#E8125D ;
+}
+.genere4{
+    background-color:#278A08 ;
+}
+.genere5{
+    background-color:#BC5800 ;
+}
+.genere6{
+    background-color:#D84000 ;
+}
+.genere7{
+    background-color:#E1108B ;
+}
+.genere8{
+    background-color:#8C67AC;
+}
+
 @media screen and (min-width:700px) {
     #uno{
 position: absolute;
@@ -525,6 +571,9 @@ html{
     background-color: transparent;
 }
 .one{
+    display: none;
+}
+#sottoFooter{
     display: none;
 }
 }
