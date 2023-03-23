@@ -51,8 +51,9 @@
     <div id="due"  class="">
       <div class="topnav position-absolute top-0  ">
         <div id="topCont">
-         <div><button class="btn bottone text-light bg-dark"><i class="bi bi-chevron-left"></i></button> <button class="btn bottone text-light bg-dark" ><i class="bi bi-chevron-right"></i></button></div>
-   <div>
+          <div><button onClick=javascript:history.back() class="btn bottone text-light bg-dark"><i  class="bi bi-chevron-left"></i></button> <button onclick=history.forward() class="btn bottone text-light bg-dark" ><i class="bi bi-chevron-right"></i></button></div>
+
+          <div>
       <img class="position-absolute rounded-5 " src="https://scontent.fpmo3-1.fna.fbcdn.net/v/t39.30808-6/326745507_2357462687754679_2166935430790731807_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qtRYbnuiaN0AX8-8QVB&_nc_oc=AQkvqJI3aWqJX3tJGB0UohAjK6sPWxl2ksFk5Pmygs1s-XisA-wYUs6abdP2v6SVeSY&_nc_ht=scontent.fpmo3-1.fna&oh=00_AfB_b20uhMeV9q2s0l9Xz9Dm6mfwxkh-vVtUohFV9TB7Ag&oe=641F5E82" width="24px"  alt="">
          <select class="text-light text-center me-2" name="boh" id="account">
             <option class="bg-dark" value="">Lidia nautilus...</option>
@@ -67,10 +68,10 @@
 <!-- Card Principale-->
 
 
-      <div class="card d-flex justify-content-start " style="width: 100%;">
+      <div class="card d-flex justify-content-start " style="width: 100%;" id="cardgrande" id="appendifoto">
         <div class="border border-0 " style="width: 100%; height: 400px;">
             
-            <img src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1" alt="" width="100%" height="100%" class="card-img">
+            <img src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1" alt="" width="100%" height="100%" class="card-img" id="">
          <div class="card-img-overlay d-flex flex-column justify-content-end  align-items-start ms-3">
             <h5 class="card-text">☑️Artista verificato</h5>
           <h1 class="card-text titolo">Yellowcard</h1>
@@ -81,8 +82,9 @@
 <!--fine card principale-->
 
 <!-- Div contenente le icone superiori Play Following e dot-->
+
 <div class="mx-2 my-3">
-  <div class="me-5 ">
+  <div class="me-5 mb-3">
      <a name="Playbutton" id="" class="btn play2" href="#" role="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-play-fill playcenter" viewBox="0 0 16 16">
            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
@@ -108,9 +110,9 @@
 
  
 
-  
+
 <div id="popolari">
- 
+   <h3>popolari</h3>
 <div class="row mb-5 " >
 
 
