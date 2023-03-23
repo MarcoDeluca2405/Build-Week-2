@@ -41,8 +41,8 @@ cercaALBUM()
 }
 
 
-
-function scrivi (Scritta){
+ 
+ function scrivi (Scritta){
 
 
 
