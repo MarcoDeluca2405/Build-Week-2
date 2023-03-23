@@ -1,6 +1,8 @@
 
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
-
+html{
+    background-color: black;
+}
 body{
     background-color: rgb(29, 29, 29);
     color: white;
@@ -17,12 +19,8 @@ body{
 
 
   .bgbg{
-    background: rgb(0,0,0);
-    background: linear-gradient(6deg, rgba(0,0,0,1) 38%, rgb(29, 29, 29) 76%);
-    font-family: 'Gotham Bold', sans-serif;
-    border: none;
-    width: 100%;
-}
+   display: none;     
+  }
 
 .myCard{
     width:200px;
@@ -106,9 +104,6 @@ body{
   }
 
 
-  .topnav{
-display:none;
-  }
   .topnavalbum{
     background-color: transparent;
   }
@@ -132,10 +127,10 @@ display:none;
     position: relative;
 }
 
-/*#due{
+#due{
     
-
-}*/
+background-color: black;
+}
 #tre{
 display: none;
 }
@@ -185,14 +180,14 @@ display: none;
 #footer{
     border-top: 0.5px solid rgb(75, 75, 75);
     height: 50px;
-    width: 100%;
-    background-color:#181818 ;
+    width: 93%;
+    background-color:rgb(51,51,51);
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 62px;
+    left: 12px;
     font-size: 10px;
-    z-index: 1000000000000000;
-    left:0;
+    z-index: 100;
+    border-radius: 0.7em;
 }
 #center{
     margin: 0 auto;
@@ -219,8 +214,7 @@ display: none;
 }
 
 #topCont{
-    display: flex;
-    justify-content: space-between;
+    display:none;
 }
 
 #unoA{
@@ -301,7 +295,7 @@ display: none;
     margin: 0 0.5em 0 1em;
     font-size: 2em;
     justify-content: space-between;
-    height: 100%;
+    height: 50px;
 }
 .playerFooter p{
     font-size: 0.6em;
@@ -314,6 +308,16 @@ display: none;
 .playerLarge{
     display:none;
 }
+.disc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:6.5em;
+}
+
+.disc a{
+    opacity: 0.3;
+}
 
 #buttonHover:hover{
     -webkit-box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
@@ -321,7 +325,122 @@ display: none;
     -o-box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
     box-shadow: inset -1px 4px 31px 0px #FFFFFF,4px 5px 28px 10px #000000;
 }
+.topMobile{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0.6rem 1em;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    background-color: black;
+}
+
+.topMobile p{
+    font-size:1.4rem;
+}
+.topM{
+    width: 4.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Music{
+    background-color:black!important;
+    border-radius: 2em;
+    border-color: transparent;
+    font-size:0.9rem
+}
+#buttons{
+    display: flex;
+    width: 196px;
+    justify-content: space-between;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    padding-top: 2em;
+}
+
+#sottoFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: -3px;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+}
+
+#sottoFooter a:link {
+    text-decoration: none;
+}
+
+
+.iconaSotto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+}
   
+.iconaSotto p{
+    margin-bottom: 0;
+}
+
+.mobileIconCont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 0.8em;
+    font-size: 1.5rem;
+}
+.heartDots{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.heartDots:nth-child(2){
+    width: 80px;
+}
+
+.cardLeft{
+    width: 120px;
+}
+.cardRight{
+    display: flex;
+    justify-content: space-between;
+    width:240px;
+}
+.one{
+    padding:0.7em;
+}
+.HmBody{
+    display:none;
+}
+.boh{
+    display:none;
+}
+.topnav{
+    margin-top: 20px;
+}
+#playlistMobile{
+    display:block;
+}
+.rounded-circle{
+    padding: 0.2rem;
+    top: 6px;
+    left: 2px;
+    background-color: blue;
+}
+.disc p{
+    width: 8em;
+}
 @media screen and (min-width:700px) {
     #uno{
 position: absolute;
@@ -343,7 +462,7 @@ display:block;
    z-index: 3;
     }
     .topnav{
-       margin-top: 20px;
+       margin-top: 0;
        height:50px; 
        width: 100%; 
        z-index: 1; 
@@ -370,6 +489,40 @@ display:block;
     }
     #footer{
         height:70px;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        width: 100%;
     }
+    #topCont{
+        display: flex;
+        justify-content: space-between;
+    }
+    .topMobile{
+        display: none;
+    }
+    .bgbg{
+        display: block;
+        background: linear-gradient(6deg, rgba(0,0,0,1) 38%, rgb(29, 29, 29) 76%);
+        background: rgb(0,0,0);
+        font-family: 'Gotham Bold', sans-serif;
+        border: none;
+        width: 100%;
+    }
+    .HmBody{
+        display:block;
+    }
+.boh{
+    display:block;
 }
-   
+#buttons{
+    display: none;
+}
+#playlistMobile{
+    display:none;
+}
+html{
+    background-color: transparent;
+}
+}
+ 
