@@ -519,10 +519,13 @@ display:block;
     display: none;
 }
 #playlistMobile{
-    display:none;
+    display:block;
 }
 html{
     background-color: transparent;
+}
+.one{
+    display: none;
 }
 }
  
