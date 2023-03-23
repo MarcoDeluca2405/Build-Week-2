@@ -134,7 +134,7 @@ function fillpage(cirio){
     for (let index = 0; index < cirio.length; index++) {
         
         titolo = cirio[index].title
-        cica = Math.ceil(eval(cirio[index].duration)/60)
+        cica = cirio[index].duration
         cico = eval([index+1])
 
         Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
@@ -145,7 +145,7 @@ function fillpage(cirio){
                              </div>
                                 <div id="cuoreNO${index}" onclick=riempi(${index}) class="d-none me-3 pt-2 "><i class="bi bi-heart-fill"></i> </div>
                              
-                             <div class="Minutaggio pt-2">${cica}m</div>
+                             <div class="Minutaggio pt-2">${timing(cica)}</div>
         
         </div>
      </div>`
@@ -153,6 +153,17 @@ function fillpage(cirio){
     }
 }
 
+
+function timing(duration) {
+    const slots = []
+    duration = Math.ceil(duration)
+    while (duration > 59 && slots.length < 2) {
+       slots.push( (duration % 60).toString().padStart(2, '0'))
+       duration = Math.floor(duration / 60)
+   }
+   if( duration > 0 ) slots.push(duration);
+   return slots.reverse().join(':')
+}
 
 
 function riempi(par) {
@@ -179,13 +190,8 @@ async function Controllo(params) {
     const response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${params}`)
     const oggetto = await response.json();
     const oggettovero =   oggetto.data;
-     console.log(oggettovero)
 
-     function randomizer(){
-       numerorand = Math.floor(Math.random() * oggettovero.length)
-       console.log(numerorand)
-       return numerorand
-     }
+     console.log(oggettovero)
 
      for (let index = 0; index < 6; index++) {
         
