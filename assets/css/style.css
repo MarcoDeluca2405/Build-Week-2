@@ -96,6 +96,11 @@ body{
     transition: all 0.5s;
   }
 
+  .hoverAlbum:hover{
+    background-color: #505050;
+    transition: all 0.1s;
+  }
+
  
   .main {
     margin-left: 340px;
@@ -257,6 +262,11 @@ display: none;
     background-color:rgb(5, 178, 36) ;
     border-radius: 100%;
     height: 60px;
+    
+}
+.play2:hover{
+    color: black;
+    background-color: rgb(33, 172, 58);
     
 }
 .playcenter{
