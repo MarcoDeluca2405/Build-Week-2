@@ -17,6 +17,25 @@ console.log(Lista);
 
 urlprova = "https://striveschool-api.herokuapp.com/api/deezer/artist/412"
 
+function backgrounddinamic() {
+    if (ID.length > 6) {
+            pato = ID
+            let varo = pato.slice(0,6)
+
+        console.log('maggiore di 6')
+        console.log("ciao",varo)
+        console.log(pato);
+
+        document.getElementById('due').style.background=`linear-gradient(0deg, #292929 70%, #${varo} 100%)`;
+    } else {
+
+        document.getElementById('due').style.background=`linear-gradient(0deg, #292929 70%, #${ID} 100%)`;
+    }
+    
+}
+
+console.log(ID.length)
+//   style="background: rgb(41,41,41);background: linear-gradient(0deg, rgba(41,41,41,1) 70%, grey 100%);"
 
 
 
@@ -32,143 +51,74 @@ async function fetchata(){
     document.getElementById('immagineAlbum').innerHTML = `<img src="${oggetti.cover_big}" id="bigCover" class="img-fluid my-3 mx-3 image_t" alt="..."></img>`
     fillpage2((oggetti))
 
-       
-       
-
-        const convertURIToImageData = (url) => {
-            return new Promise((resolve, reject) => {
-              if (!url) {
-                return reject();
-              }
-              const canvas = document.createElement('canvas')
-              const context = canvas.getContext('2d')
-              const image = new Image();
-              image.onload = () => {
-                canvas.width = image.width;
-                canvas.height = image.height;
-                context.drawImage(image, 0, 0, canvas.width, canvas.height);
-                resolve(context.getImageData(0, 0, canvas.width, canvas.height));
-              }
-              image.crossOrigin = "Anonymous";
-              image.src = url;
-            });
-          }
-          const url = oggetti.cover_big;
-          const load = async () => {
-            const img = await convertURIToImageData(url)
-            console.log(img)
-
-           
-          }
-          load()
-
-          
-          
-          convertURIToImageData(oggetti.cover_big)
-       
 
 
+      /*function getcolor(imageElem, ratio) {
+        console.log(imageElem)
+        const canvas = document.createElement('canvas')
+        console.log(canvas)
+         
+        canvas.width = imageElem.width 
+        canvas.height = imageElem.height 
+        
+        let width = canvas.width
+        let height = canvas.height
 
-          function averageColor(imageElement) {
- 
-            // Create the canvas element
-            var canvas
-                = document.createElement('canvas'),
- 
-                // Get the 2D context of the canvas
-                context
-                    = canvas.getContext &&
-                    canvas.getContext('2d'),
-                imgData, width, height,
-                length,
- 
-                // Define variables for storing
-                // the individual red, blue and
-                // green colors
-                rgb = { r: 0, g: 0, b: 0 },
- 
-                // Define variable for the
-                // total number of colors
-                count = 0;
- 
-            // Set the height and width equal
-            // to that of the canvas and the image
-            height = canvas.height =
-                imageElement.naturalHeight ||
-                imageElement.offsetHeight ||
-                imageElement.height;
-            width = canvas.width =
-                imageElement.naturalWidth ||
-                imageElement.offsetWidth ||
-                imageElement.width;
- 
-            // Draw the image to the canvas
-            context.drawImage(imageElement, 0, 0);
- 
-            // Get the data of the image
-            imgData = context.getImageData(
-                        0, 0, width, height);
- 
-            // Get the length of image data object
-            length = imgData.data.length;
- 
-            for (var i = 0; i < length; i += 4) {
- 
-                // Sum all values of red colour
-                rgb.r += imgData.data[i];
- 
-                // Sum all values of green colour
-                rgb.g += imgData.data[i + 1];
- 
-                // Sum all values of blue colour
-                rgb.b += imgData.data[i + 2];
- 
-                // Increment the total number of
-                // values of rgb colours
-                count++;
+        const context = canvas.getContext('2d');
+
+        console.log(context);
+        context.drawImage(imageElem,0,0);
+
+        let data,length;
+        let i = -4, count = 0
+
+        try {
+            data = context.getImageData(0,0,width,height)
+            length = data.data.length
+        } catch (error) {
+            console.log(error)
+            return{
+                R:0,
+                G:0,
+                B:0
             }
- 
-            // Find the average of red
-            rgb.r
-                = Math.floor(rgb.r / count);
- 
-            // Find the average of green
-            rgb.g
-                = Math.floor(rgb.g / count);
- 
-            // Find the average of blue
-            rgb.b
-                = Math.floor(rgb.b / count);
- 
-            return rgb;
         }
- 
-        // Function to set the background
-        // color of the second div as
-        // calculated average color of image
-        var rgb;
- 
-        setTimeout(() => {
-            rgb = averageColor(
-                document.getElementById(oggetti.cover_big));
- 
-            // Select the element and set its
-            // background color
-            document
-                .getElementById("due")
-                .style.backgroundColor =
-                'rgb(' + rgb.r + ','
-                + rgb.g + ','
-                + rgb.b + ')';
-        }, 500)
+        let R,G,B
 
-        averageColor()
+        R = G = B = 0
+
+        while((i += ratio * 4)<length){
+            ++count
+            R+= data.data[i]
+            G+= data.data[i + 1]
+            B+= data.data[i + 2]
+        }
+    
+        R = ~~(R / count)
+        G = ~~(G / count)
+        B = ~~(B / count)
+        console.log(R,G,)
+        return{
+            R,
+            G,
+            B
+        }
+       
+        
+    }    
+    const image = document.querySelector('#bigCover');
+    function ciao() {
+        const {R,G,B} = getcolor(image,4)
+        console.log(R,G,B)
+    }
+    ciao();*/
+         
 
 }
       
 
 
-
+backgrounddinamic();
 
 console.log()
   
@@ -213,6 +163,8 @@ function fillpage(cirio){
     }
 }
 
+
+
 function riempi(par) {
     let cuorep = document.getElementById(`cuorepieno${par}`);
     let cuoreN = document.getElementById(`cuoricino${par}`);
@@ -223,10 +175,15 @@ function riempi(par) {
     
 }
 
+
+
 function hoverh(par) {
     let cuore = document.getElementById(`cuoricino${par}`);
        cuore.classList.toggle('d-none');
 }
+
+
+
 
 async function Controllo(params) {
     const response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${params}`)
