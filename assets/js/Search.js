@@ -5,6 +5,12 @@ const urlArtist=" https://striveschool-api.herokuapp.com/api/deezer/artist/";
 const id="?q={query}";
 const row=document.getElementById("row");
 let artistArray= [];
+let current=document.getElementById("current");
+let max=document.getElementById("max");
+let aux=document.getElementById("audio");
+
+
+
 
 
 let search;
@@ -21,13 +27,15 @@ let responsive=await fetch(url+search,{
 let Nameartist= await responsive.json();
 let item=await Nameartist.data;
 console.log(item);
+let index=-1;
 item.forEach(element => {
+  index++;
     if (((search).toLowerCase()).includes((element.artist.name).toLowerCase()))
     {
         artistArray.push(element);
-        getListArtist(element);
+        getListArtist(element,index);
     }
-    console.log(search);
+    console.log(index);
     
 });
 }
@@ -82,18 +90,19 @@ let popola=(search)=>{
 
 
 
-const getListArtist=(getItem)=>{
-
+const getListArtist=(getItem,index)=>{
+ 
       row.innerHTML+=`
 <col class="col">
 
-<button type="button"  class="btn text-light" onclick=location.href="./Album_Page.html?id=${getItem.album.id}"; >
+
+<button type="button" onclick=audioPlay(${index}); class="btn text-light">
 <div class="card d-flex d-inline-flex bg-dark  h-25 w-100" style="width: 18rem;">
    
 
 
 <div class="card-body d-flex d-inline align-items-center justify-content-between " id="buttonHover">
-    <div class="img">
+    <div class="img" onclick=location.href="./Album_Page.html?id=${getItem.album.id}" >
     <img src="${getItem.artist.picture}" class="card-img w-100" alt="...">
 </div>
 <h5 class="card-title my-0 overflow-hidden">${getItem.title_short}</h5>
@@ -106,7 +115,9 @@ const getListArtist=(getItem)=>{
 </div>
 </button>
 
-
+<audio id="myAudio">
+<source src="${getItem.preview}" type="audio/mp3">
+</audio>
 
 `;  
     
@@ -116,6 +127,33 @@ const getListArtist=(getItem)=>{
 
 }
 
+
+const audioPlay=async (index)=>{
+try {
+  let responsive=await fetch(url+search);
+  let conferma=await responsive.json();
+  let item=conferma.data;
+  let music=document.getElementById("myAudio");
+  let title=document.getElementById("titolo");
+  let nameArtsit=document.getElementById("nameArtist");
+
+  title.innerText=item[index].title;
+  nameArtsit.innerText=item[index].artist.name;
+
+  let imgID=document.getElementById("imgId");
+  imgID.src=item[index].artist.picture_small;
+
+
+  music.play();
+
+  console.log(item[index].id);
+
+} catch (error) {
+  
+}
+
+
+}
 
 
 popola();
