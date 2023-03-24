@@ -140,7 +140,7 @@ function fillpage(cirio){
         Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
         <div class="d-flex"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a style="text-decoration:none;" href="Artist_Page.html?id=${cirio[index].artist.id}">${cirio[index].artist.name}</a></span> </span> </div> 
                 <div  class="d-flex"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
-                    <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> 
+                   <a onclick=like(${index})> <i id="cuorepieno${index}" onclick=riempi(${index})  class="bi bi-heart"></i> </a>
                             
                              </div>
                                 <div id="cuoreNO${index}" onclick=riempi(${index}) class="d-none me-3 pt-2 "><i class="bi bi-heart-fill"></i> </div>
@@ -210,6 +210,42 @@ async function Controllo(params) {
      }
     
    
+}
+
+mylike=[]
+async function like (codice){
+    const risposta1 = await  fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${ID}`)
+    const oggett2 = await risposta1.json();
+    let arraynuova = oggett2.tracks.data
+  console.log("ccc",oggett2)
+  
+    console.log(arraynuova)
+   
+   let oggetto = {
+    name:arraynuova[codice].title,
+    mp3:arraynuova[codice].preview,
+   
+    
+
+
+   }
+   mylike.push(oggetto)
+     var valore = localStorage.getItem("like")
+     console.log(mylike)
+     mylike.forEach((el)=>{
+        console.log(el.name)
+
+
+
+if (el.name!=valore.name){
+       localStorage.setItem("like",JSON.stringify (mylike))
+     
+       
+}
+     }
+     )
+ 
+
 }
 
 

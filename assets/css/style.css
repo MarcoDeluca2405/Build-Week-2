@@ -1,7 +1,12 @@
 
 @import url('https://fonts.cdnfonts.com/css/gotham-bold');
-html{
+.back{
     background-color: black;
+}
+
+
+html{
+    background-color:black;
 }
 body{
     background-color: rgb(29, 29, 29);
@@ -537,7 +542,7 @@ display:block;
        width: 100%; 
        z-index: 1; 
        top: 0; 
-       background-color: rgb(29, 29, 29); 
+       background-color: transparent;
        overflow-x: hidden;
        position: sticky;
        top: 0;
@@ -602,3 +607,8 @@ html{
 }
 }
  
+#piaciute{
+    width: 100%;
+    height: 100px;
+    border: 1px solid wheat;
+}
