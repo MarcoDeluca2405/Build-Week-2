@@ -141,7 +141,7 @@ function fillpage(cirio){
         Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum align-items-center" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
         <div class="d-flex align-items-center"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row my-2 spazioZero"><b>${titolo}</b> <span><a style="text-decoration:none;" href="Artist_Page.html?id=${cirio[index].artist.id}">${cirio[index].artist.name}</a></span> </span> </div> 
                 <div  class="d-flex align-items-center"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
-                    <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> 
+              <a onclick=like(${index})>   <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> </a>
                             
                              </div>
                                 <div id="cuoreNO${index}" onclick=riempi(${index}) class="d-none me-3 pt-2 "><i class="bi bi-heart-fill"></i> </div>
@@ -222,7 +222,7 @@ async function Controllo(params) {
    
 }
 
-mylike=[]
+let mylike=[]
 async function like (codice){
     const risposta1 = await  fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${ID}`)
     const oggett2 = await risposta1.json();
@@ -244,14 +244,8 @@ async function like (codice){
      console.log(mylike)
      mylike.forEach((el)=>{
         console.log(el.name)
+    localStorage.setItem("like",JSON.stringify(mylike))
 
-
-
-if (el.name!=valore.name){
-       localStorage.setItem("like",JSON.stringify (mylike))
-     
-       
-}
      }
      )
  
