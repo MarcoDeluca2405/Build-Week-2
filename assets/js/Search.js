@@ -142,8 +142,11 @@ try {
 
   let imgID=document.getElementById("imgId");
   imgID.src=item[index].artist.picture_small;
+let play=document.getElementById("play");
+play.classList.toggle("bi-play-circle-fill");
+play.classList.toggle("bi-pause-circle-fill");
 
-  
+
   music.play();
 
   console.log(item[index].id);
@@ -159,6 +162,8 @@ try {
 const stopA=()=>{
   let music=document.getElementById("myAudio");
   music.pause();
+  play.classList.toggle("bi-play-circle-fill");
+play.classList.toggle("bi-pause-circle-fill");
 }
 
 
