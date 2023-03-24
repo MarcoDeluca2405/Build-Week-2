@@ -8,10 +8,10 @@ console.log(nuova)
 nuova.forEach((ev)=>{
 let appendi = document.getElementById("appendi")
 let create = document.createElement("div")
-create.innerHTML=`<div class="col">
+create.innerHTML=`<div class="d-flex " id="coloraLike">
 <div class="d-flex align-items-center" id="piaciute">
-    <h1 class="mx-1"> ${ev.name} </h1>
-    <img src="">
+    <h3 class="mx-1"> ${ev.name} </h3>
+   <a href="${ev.mp3}" class="btn btn-success">Clicca per la canzone</a>
 </div>
 </div>`
 
