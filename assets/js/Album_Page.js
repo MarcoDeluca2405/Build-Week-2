@@ -222,4 +222,40 @@ async function Controllo(params) {
    
 }
 
+mylike=[]
+async function like (codice){
+    const risposta1 = await  fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${ID}`)
+    const oggett2 = await risposta1.json();
+    let arraynuova = oggett2.tracks.data
+  console.log("ccc",oggett2)
+  
+    console.log(arraynuova)
+   
+   let oggetto = {
+    name:arraynuova[codice].title,
+    mp3:arraynuova[codice].preview,
+   
+    
+
+
+   }
+   mylike.push(oggetto)
+     var valore = localStorage.getItem("like")
+     console.log(mylike)
+     mylike.forEach((el)=>{
+        console.log(el.name)
+
+
+
+if (el.name!=valore.name){
+       localStorage.setItem("like",JSON.stringify (mylike))
+     
+       
+}
+     }
+     )
+ 
+
+}
+
 
