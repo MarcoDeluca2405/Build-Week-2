@@ -10,8 +10,7 @@ let max=document.getElementById("max");
 let aux=document.getElementById("audio");
 
 
-current.innerText=aux.ariaValueNow();
-max.innerText=aux.ariaValueMax();
+
 
 
 let search;
