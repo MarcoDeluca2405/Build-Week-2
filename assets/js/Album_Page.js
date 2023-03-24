@@ -1,5 +1,6 @@
 
 Lista = document.getElementById('lista');
+bodyCardMobile=document.getElementById('bodyCardMobile');
 let ID = new URLSearchParams(window.location.search).get('id');
 console.log(ID)
 
@@ -137,18 +138,19 @@ function fillpage(cirio){
         cica = cirio[index].duration
         cico = eval([index+1])
 
-        Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
-        <div class="d-flex"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row"><b>${titolo}</b> <span><a style="text-decoration:none;" href="Artist_Page.html?id=${cirio[index].artist.id}">${cirio[index].artist.name}</a></span> </span> </div> 
-                <div  class="d-flex"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
-                   <a onclick=like(${index})> <i id="cuorepieno${index}" onclick=riempi(${index})  class="bi bi-heart"></i> </a>
+        Lista.innerHTML += `<div class="d-flex justify-content-between rounded hoverAlbum align-items-center" id="elementlist" onmouseover=hoverh(${[index]}) onmouseout=hoverh(${[index]})>
+        <div class="d-flex align-items-center"><span class="numberAlbum pt-2 my-3" >${cico}</span> &nbsp; &nbsp;<span class="row my-2 spazioZero"><b>${titolo}</b> <span><a style="text-decoration:none;" href="Artist_Page.html?id=${cirio[index].artist.id}">${cirio[index].artist.name}</a></span> </span> </div> 
+                <div  class="d-flex align-items-center"> <div id="cuoricino${index}" class="me-3 pt-2 d-none"> 
+                    <i id="cuorepieno${index}" onclick=riempi(${index}) class="bi bi-heart"></i> 
                             
                              </div>
                                 <div id="cuoreNO${index}" onclick=riempi(${index}) class="d-none me-3 pt-2 "><i class="bi bi-heart-fill"></i> </div>
                              
-                             <div class="Minutaggio pt-2">${timing(cica)}</div>
+                             <div class="Minutaggio">${timing(cica)}</div>
+                             <div class="MinutaggioMobile"><i class="bi bi-three-dots-vertical trePunti"></i></div>
         
         </div>
-     </div>`
+     </div>`;
         
     }
 }
@@ -206,6 +208,14 @@ async function Controllo(params) {
                </div>
             </a> 
      `;
+     bodyCardMobile.innerHTML=`                      
+     <h4>${oggettovero[index].album.title}</h4>
+     <div class="d-flex align-items-center mb-2 hi">
+       <div><img src=${oggettovero[index].artist.picture_small}></div>
+       <p class="mb-0 ms-3">${oggettovero[index].artist.name}</p> 
+     </div>
+     <p> Album ‧ 2020</p>
+`;
         
      }
     

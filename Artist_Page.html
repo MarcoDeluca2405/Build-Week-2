@@ -21,7 +21,7 @@
 
           <div class="principale">
               <div class="container-fluid flex-column ms-0 bg-black">
-                  <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill"></i>Home</a>
+                  <a class="navbar-brand" href="./Home_Page.html"><i class="bi bi-house-door-fill"></i>Home</a>
                   <a class="navbar-brand" href="/Search.html"><i class="bi bi-search"></i>Cerca</a>
                   <a class="navbar-brand" href="#"><svg role="img" height="24" width="24"
                           aria-hidden="true" class=" Svg-sc-ytk21e-0 uPxdw collection-icon"
@@ -56,28 +56,39 @@
           <div>
       <img class="position-absolute rounded-5 " src="https://scontent.fpmo3-1.fna.fbcdn.net/v/t39.30808-6/326745507_2357462687754679_2166935430790731807_n.png?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=qtRYbnuiaN0AX8-8QVB&_nc_oc=AQkvqJI3aWqJX3tJGB0UohAjK6sPWxl2ksFk5Pmygs1s-XisA-wYUs6abdP2v6SVeSY&_nc_ht=scontent.fpmo3-1.fna&oh=00_AfB_b20uhMeV9q2s0l9Xz9Dm6mfwxkh-vVtUohFV9TB7Ag&oe=641F5E82" width="24px"  alt="">
          <select class="text-light text-center me-2" name="boh" id="account">
-            <option class="bg-dark" value="">Lidia nautilus...</option>
+            <option class="bg-dark" value="">Lidia nautilus....</option>
          </select>
    </div>
    
       </div>
 
-</div>
+ </div>
 
 
 <!-- Card Principale-->
 
 
-      <div class="card d-flex justify-content-start " style="width: 100%;" id="cardgrande" id="appendifoto">
-       
+      <div class="card d-flex justify-content-start position-relative" style="width: 100%;" id="cardgrande" id="appendifoto">
+        <!-- 
+        <div id="ciao"><i class="bi bi-arrow-left-circle"></i></div>
+        <div class="border border-0 immagine" >
+            
+            <img src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1" alt="" width="100%" height="100%" class="card-img" id="">
+         <div class="card-img-overlay d-flex flex-column justify-content-end  align-items-start ms-3">
+            <h5 class="card-text artistaV">☑️Artista verificato</h5>
+          <h1 class="card-text titolo">Yellowcard</h1>
+          <p class="card-text fs-5 artistaV">2000 ascoltatori</p>
+          </div>
+        </div>
+        -->
       </div>
 <!--fine card principale-->
 
 <!-- Div contenente le icone superiori Play Following e dot-->
 
 <div class="mx-2 my-3">
-  <div class="me-5 mb-3">
-     <a name="Playbutton" id="" class="btn play2" href="#" role="button">
+  <div class="me-5 mb-3 pulsantiDesktop">
+     <a name="Playbutton" id="" class="btn play2 me-3" href="#" role="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-play-fill playcenter" viewBox="0 0 16 16">
            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
         </svg>
@@ -91,6 +102,42 @@
         </svg>
      </a>
         </div>
+        <div class="d-flex flex-column marginMobile">
+            <div>
+                <p class="mb-0 grayColor ascoltatori"> 3.961.093 ascoltatori mensili</p>
+            </div>
+            <div class="pulsantiMobileArtist">
+            <div class="primo">
+                <div>Seguiti</div>
+                <div><i class="bi bi-three-dots-vertical"></i></div>
+            </div>
+          
+          <div class="secondo">
+            <div><i class="bi bi-shuffle"></i></div>
+            <div><a name="Playbutton" id="" class="btn play3 playMobile" href="#" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-play-fill playcenterMobile2" viewBox="0 0 16 16">
+                 <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+              </svg>
+           </a></div>
+            
+          </div>
+        </div>
+
+        <div id="braniPiaciuti">
+<!--
+                <div class="d-flex align-items-center mb-2 mt-4 hi2">
+                <div><img src="https://picsum.photos/200">
+                    <i class="bi bi-heart-fill cuoreMiPiace"></i>
+                </div>
+                <div>
+                <p class="mb-0 ms-3">Brani che ti piacciono</p> 
+                <p class="mb-0 ms-3 sottoP">8 brani di Pinguini tattici nucleari</p>
+            </div>
+        </div>
+-->
+
+
+            </div>
 
     <!-- fine del div contenente icone-->
 
@@ -104,7 +151,7 @@
 
 
 <div id="popolari">
-   <h3>popolari</h3>
+   <h5>Popolari</h5>
 <div class="row mb-5 " >
 
 
@@ -113,17 +160,35 @@
 
 <!--Parte con le card da inserire-->
 
-<div class="col me-5 mb-5 " id="card">
-
+<div class="col me-5" id="card">
+    
 
 </div>
 
+<div id="artistCardContainer">
+<!--
 
+
+<div class="artistCard">
+     <div class="sottoArtistCard">
+        <div>1</div>
+        <img class="ms-3 me-2"src="https://picsum.photos/200" width="45px" height="45px"  alt="">
+        <div>
+            <p class="mb-0">Titolo Canzone</p>
+            <p class="mb-0">Ascolti</p>
+        </div>
+    </div>
+    <div>
+        <i class="bi bi-three-dots-vertical"></i>
+    </div>
+</div>
+-->
+</div>
 
 <!--unica card -->
   
-  <div class="col ">
-    <h3 class="d-inline ">Popolari</h3>
+  <div class="col Minutaggio">
+    <h5 class="d-inline ">Brani che ti piacciono</h5>
     <div id="card-footer  " class="d-flex ">
       
       <img src="https://scontent.fpmo3-1.fna.fbcdn.net/v/t1.18169-9/28059412_1935205419843921_2922191065387588224_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ffcwB_fW8o8AX-7nzrF&_nc_oc=AQkDJpgNYUijtMuex0rzEYLQjCox2Coxj4y_NP1qZyLwRJlZzRlOsKeKCJne9DSiZl0&_nc_ht=scontent.fpmo3-1.fna&oh=00_AfBKZ0VBOWzmUQnN9s26fPqqaBoG9qaarFWhDRGxzAbBfg&oe=64405EF4" alt="" width="50px" height="50px" class="rounded-5 ">
@@ -143,37 +208,6 @@
 </div>
 
 <!--fine delle card-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>
@@ -221,26 +255,6 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 </div>
 <div id="quattro">
@@ -248,71 +262,107 @@
   
 </div>
 
-
-
-
-
   </div>
-
-
-
 
   <footer>
     <div id="footer">
-  
-  <div class=" mx-2 my-2 d-flex justify-content-between">
-  
-    <div id="card-footer  " class="d-flex ">
-      <img src="https://scontent.fpmo3-1.fna.fbcdn.net/v/t1.18169-9/28059412_1935205419843921_2922191065387588224_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ffcwB_fW8o8AX-7nzrF&_nc_oc=AQkDJpgNYUijtMuex0rzEYLQjCox2Coxj4y_NP1qZyLwRJlZzRlOsKeKCJne9DSiZl0&_nc_ht=scontent.fpmo3-1.fna&oh=00_AfBKZ0VBOWzmUQnN9s26fPqqaBoG9qaarFWhDRGxzAbBfg&oe=64405EF4" alt="" width="50px" height="50px">
-  <div class="d-flex flex-column p-1 mx-2 ">
-  
-  <p class="m-0 fs-6">Fat funny Friend</p>
-  <p class="">Maddlie Zahm</p>
-  </div>
-  <a href="#" class="my-3 mx-3"><i class="bi bi-heart "></i></a>
-  
-  
-  </div>
-  <div class=" w-50">
-  <div class="text-center fs-5">
-     <a href=""class="text-success"><i class="bi bi-shuffle"></i></a>
-     <a href=""><i class="bi bi-skip-start-fill"></i></i></a>
-     <a href=""><i class="bi bi-play-circle-fill"></i></a>
-     <a href=""><i class="bi bi-skip-end-fill"></i></a>
-     <a href=""class="text-success"><i class="bi bi-arrow-counterclockwise"></i></a>
-  <!--Le icone Superiori del footer-->
-  <p class=" d-inline me-0 float-end mx-2 mt-4">0,48</p>
-  <p class="d-inline me-0 float-start me-2 mt-4">0,48</p>
-     <div class="progress my-1" style="height: 8px;">
-      
-      <div class="progress-bar" role="progressbar" name="progre"aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="audio">
-      
-      </div>
-     </div>
-  
-  
-  
-  
-  </div>
-  
-  </div>
-  
-  <div class="d-flex my-4 ">
-  <a href="" class="me-1"><i class="bi bi-mic-fill"></i></a>
-  <a href=""class="me-1"><i class="bi bi-list"></i></a>
-  <a href=""class="me-1"><i class="bi bi-speaker-fill"></i></a>
-  <a href=""class="me-1"><i class="bi bi-volume-down"></i></a>
-  <div class="progress my-1 me-1" style="height: 6px;">
-      
-    <div class="progress-bar" role="progressbar" name="progre"aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="audio2">
-      </div>
-      
-  </div>
-  <a href=""><i class="bi bi-arrows-angle-expand"></i></a>
-  </div>
-  </div>
-  </div>
-  </footer>
+
+       <div class="playerLarge">
+
+          <div id="card-footer  " class="d-flex ">
+             <img
+                src="https://scontent.fpmo3-1.fna.fbcdn.net/v/t1.18169-9/28059412_1935205419843921_2922191065387588224_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ffcwB_fW8o8AX-7nzrF&_nc_oc=AQkDJpgNYUijtMuex0rzEYLQjCox2Coxj4y_NP1qZyLwRJlZzRlOsKeKCJne9DSiZl0&_nc_ht=scontent.fpmo3-1.fna&oh=00_AfBKZ0VBOWzmUQnN9s26fPqqaBoG9qaarFWhDRGxzAbBfg&oe=64405EF4"
+                alt="" width="50px" height="50px">
+             <div class="d-flex flex-column p-1 mx-2 ">
+
+                <p class="m-0 fs-6">Fat funny Friend</p>
+                <p class="">Maddlie Zahm</p>
+             </div>
+             <a href="#" class="my-3 mx-3"><i class="bi bi-heart "></i></a>
+
+
+          </div>
+          <div class=" w-50">
+             <div class="text-center fs-5">
+                <a href="" class="text-success"><i class="bi bi-shuffle"></i></a>
+                <a href=""><i class="bi bi-skip-start-fill"></i></i></a>
+                <a href=""><i class="bi bi-play-circle-fill"></i></a>
+                <a href=""><i class="bi bi-skip-end-fill"></i></a>
+                <a href="" class="text-success"><i class="bi bi-arrow-counterclockwise"></i></a>
+                <!--Le icone Superiori del footer-->
+
+                <p class="d-inline me-0 float-start me-2 mt-4">0:28</p>
+                <p class=" d-inline me-0 float-end mx-2 mt-4">0:48</p>
+
+
+                <div class="progress my-1" style="height: 8px;">
+
+                   <div class="progress-bar" role="progressbar" name="progre" aria-valuenow="0"
+                      aria-valuemin="0" aria-valuemax="100" id="audio">
+
+                   </div>
+                </div>
+
+             </div>
+
+          </div>
+
+          <div class="d-flex my-4 ">
+             <a href="" class="me-1"><i class="bi bi-mic-fill"></i></a>
+             <a href="" class="me-1"><i class="bi bi-list"></i></a>
+             <a href="" class="me-1"><i class="bi bi-speaker-fill"></i></a>
+             <a href="" class="me-1"><i class="bi bi-volume-down"></i></a>
+             <div class="progress my-1 me-1" style="height: 6px;">
+
+                <div class="progress-bar" role="progressbar" name="progre" aria-valuenow="0" aria-valuemin="0"
+                   aria-valuemax="100" id="audio2">
+                </div>
+             </div>
+             <a href=""><i class="bi bi-arrows-angle-expand"></i></a>
+          </div>
+       </div>
+       <div class="playerFooter">
+          <div class="disc">
+             <a href="#"><i class="bi bi-disc"></i></a>
+             <p class="mb-0">   
+                 <marquee  loop="-1" scrollamount="1" scrolldelay="20" direction="right">
+             Titolo canzone<br>
+             </marquee>
+                </p>
+         
+          </div>
+
+          <div class="playerIcons">
+
+             <a href="#"><i class="bi bi-speaker-fill"></i></a>
+             <a href="#"><i class="bi bi-heart "></i></a>
+             <a href=""><i class="bi bi-play-fill"></i></a>
+          </div>
+       </div>
+    </div>
+    <div id="sottoFooter">
+       <a href="./Home_Page.html" class="iconaSotto">
+          <i class="bi bi-house-door-fill"></i>
+          <p>Home</p>
+       </a>
+       <a href="./Search.html" class="iconaSotto">
+          <i class="bi bi-search"></i>
+          <p>Cerca</p>
+       </a>
+       <a href="#" class="iconaSotto">
+          <div>
+             <svg role="img" height="24" width="24" aria-hidden="true"
+                   class=" Svg-sc-ytk21e-0 uPxdw collection-icon" viewBox="0 0 24 24" data-encore-id="icon">
+                   SVG per l'icona della libreria spotify
+                   <path style="fill:gray"
+                      d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z">
+                   </path>
+                </svg>
+          </div>
+          <p>La tua libreria</p>
+       </a>
+    </div>
+ </footer>
 
 
 </div>

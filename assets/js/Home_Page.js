@@ -35,7 +35,7 @@ const getAlbum2=async () =>{
     });
     
     console.log(arrayItem);
-    for(let i=0;i<6;i++){
+    for(let i=0;i<5;i++){
        getItemAlbum2(arrayItem2[i]);
     
     }
@@ -50,7 +50,7 @@ const getAlbum3=async () =>{
     });
     
     console.log(arrayItem);
-    for(let i=0;i<6;i++){
+    for(let i=0;i<5;i++){
        getItemAlbum3(arrayItem3[i]);
     
     }
@@ -93,7 +93,7 @@ const getItemAlbum2= (element)=>{
 
 row2.innerHTML+=`
 
-<div class="card cartecanz hoveraggio btn text-light col-2 my-2" onclick=location.href="./Album_Page.html?id=${element.album.id}"  style="width: 12rem;">
+<div class="card cartecanz hoveraggio btn text-light col-2 my-2" onclick=location.href="./Album_Page.html?id=${element.album.id}" style="width: 12rem;">
 <img src="${element.album.cover}" class="card-img-top mt-2 " alt="...">
 <div class="card-body">
    <p class="card-text"><b class="d-block">Hot hits italia</b> <span>la playlist piu calda del momento</span></p>
@@ -101,6 +101,7 @@ row2.innerHTML+=`
 </div>
 
 `
+
 
 }
 const getItemAlbum3= (element)=>{

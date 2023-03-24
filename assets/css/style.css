@@ -34,7 +34,9 @@ body{
 }
 
 .Big{
-  font-size: 500%;
+  font-size: 50px;
+  display: inherit;
+  width: 100%;
 }
 .play{
     background-color: rgb(14, 192, 14);
@@ -138,7 +140,7 @@ body{
 }
 
 #due{
-    
+    padding-bottom: 80px;
 background-color: black;
 }
 #tre{
@@ -206,8 +208,8 @@ display: none;
 
 
 #audio{
-    background-color: #703636c1 ;
-    
+    background-color: #17df10c1 ;
+    width: 20%;
     color: rgb(5, 178, 36);
     
 }
@@ -260,7 +262,8 @@ display: none;
     font-size: 10px;
 }
 .img{
-    width: 40px;
+    width: 60px;
+    height:60px;
 }
 
 .play2{
@@ -281,15 +284,17 @@ display: none;
 .bgbgAlbum{
     border: none;
     background: transparent;
+    margin: 0;
+    padding:0;
 }
 .albumlist{
-
+padding-top: 0;
     background-color: rgb(29, 29, 29, 0.2);
     height: 100%;
     width: 100%;
 }
 .CentroAlbum{
-    padding-bottom: 80px;
+    padding-bottom: 105px;
 }
 .Centerfade{
 
@@ -298,6 +303,7 @@ display: none;
     padding-left: 50px;
 }
 .bordosotto{
+    display: none;
     border-bottom: solid white 1px;
 }
 #buttonHover{
@@ -454,9 +460,7 @@ transition: box-shadow 0.5s color 0.5s linear;
 .boh{
     display:none;
 }
-.topnav{
-    margin-top: 20px;
-}
+
 #playlistMobile{
     display:block;
 }
@@ -516,6 +520,195 @@ transition: box-shadow 0.5s color 0.5s linear;
     background-color:#8C67AC;
 }
 
+
+
+@media screen and (min-width:760px) {
+    .Big{
+        font-size: 10px;
+        width: 100%;
+    }
+    .immargin img{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .Big{
+        font-size: 40px;
+        width: 100%;
+    }
+    .immargin img{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .Big{
+        font-size: 40px;
+        width: 100%;
+    }
+    .immargin img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+.rowMobile{
+    justify-content: center;
+}
+.hi{
+    margin-bottom: 0.2em;
+}
+.hi2{
+    display: flex;
+    align-items:center;
+}
+.hi div img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+.hi2 div img{
+width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+.bodycard{display: none;}
+.cardMobile h4{
+    margin-bottom:0.2em;
+}
+#bodyCardMobile{
+    margin-left: 1.2em;
+    margin-top: 2.3em;
+}
+.pulsantiDesktop{
+    display: none;
+}
+.pulsantiMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pulsantiMobileArtist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.6em;
+    margin-top: 0.6em;
+}
+.primo{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+}
+.primo i, .secondo i{
+    font-size: 1.3em;
+}
+.play3{
+   background-color: rgb(5, 178, 36);
+border-radius: 100%;
+height: 40px;
+width: 40px; 
+}
+.playcenterMobile{
+    margin-top: -4px;
+    margin-left: -9px;
+}
+.secondo{
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+    align-items: center;
+}
+.playcenterMobile2{
+    margin-top: -2px;
+    margin-left: -7px;
+}
+.senzaMobile{
+    display: none;
+}
+.numberAlbum{
+    display: none;
+}
+.Minutaggio{
+    display: none;
+}
+.MinutaggioMobile{
+    display: block;
+}
+.MinutaggioMobile i{
+  font-size: 1.3em;  
+}
+.nascondi{
+    display: none;
+}
+.sottoAlbumList{
+    margin:0 1.2em;
+}
+.spazioZero b, .spazioZero span{
+    padding: 0;
+}
+.grayColor{color:gray}
+#row{
+    padding-bottom: 104px;
+}
+#popolari{
+    padding-bottom: 50px;
+}
+.artistaV{
+    display: none;
+}
+.sottoP{
+    font-size: 11px;
+}
+.artistCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.7em 0 1em 0;
+
+    
+}
+.sottoArtistCard{
+    display: flex;
+    align-items: center;
+}
+#card{
+    margin-bottom:0;
+}
+.marginMobile{
+    margin: 0 0.7em
+}
+#ciao{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    font-size: 2em;
+}
+.immagine{
+    width: 100%; 
+    height: 350px;
+}
+.cuoreMiPiace{
+    position: absolute;
+    left: 50px;
+    top: 488px;
+    color: lime;
+    font-size: 1.2em;
+}
+.ascoltatori{
+    display: block;
+}
 @media screen and (min-width:700px) {
     #uno{
 position: absolute;
@@ -605,6 +798,84 @@ html{
 #sottoFooter{
     display: none;
 }
+.rowMobile{
+    justify-content: normal;
+}
+.bodycard{display: block;}
+.bgbgAlbum{
+    margin-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+.pulsantiDesktop{
+    display: block;
+}
+.pulsantiMobile{
+    display: none;
+}
+.pulsantiMobileArtist{
+    display: none;
+}
+.senzaMobile{
+    display: block;
+}
+.bordosotto{
+    display: flex;
+}
+.numberAlbum{
+    display: block;
+    padding-right: 0.8em;
+}
+.Minutaggio{
+    display: block;
+}
+.MinutaggioMobile, .hi2, .artistCard {
+    display: none;
+}
+.nascondi{
+    display: flex;
+}
+.albumlist{
+    padding-top: 1rem;
+    }
+    .sottoAlbumList{
+        margin:1rem 0 1rem 3rem;
+    }
+    .sottoLista{
+        margin-right: 3rem;
+    }
+    #row{
+        padding-bottom: 75px;
+    }
+    .CentroAlbum{
+        padding-bottom: 0;
+    }
+    #album2{
+
+            padding-bottom: 80px;
+
+    }
+    .sottoAlbumList{
+        padding-bottom: 50px;
+    }
+    .topnav{
+        margin-top: 0;
+    }
+    .artistaV{
+        display: block;
+    }
+    #card{
+        margin-bottom:3rem;
+    }
+    #ciao{
+        display:none;
+    }
+    .immagine{
+        width: 100%; 
+        height: 400px;
+    }
+    .ascoltatori{
+        display: none;
+    }
 }
  
 #piaciute{
