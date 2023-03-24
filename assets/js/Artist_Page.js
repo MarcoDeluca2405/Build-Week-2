@@ -103,3 +103,4 @@ referenzacarta.innerHTML= ` <div class="border border-0 immagine">
         </div>
       </div> `
 }
+
