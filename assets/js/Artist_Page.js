@@ -70,3 +70,4 @@ referenzacarta.innerHTML= ` <div class="border border-0 " style="width: 100%; he
         </div>
       </div> `
 }
+
