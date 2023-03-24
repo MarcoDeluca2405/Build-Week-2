@@ -191,7 +191,8 @@ function hoverh(par) {
 async function Controllo(params) {
     const response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${params}`)
     const oggetto = await response.json();
-    const oggettovero =   oggetto.data;
+    console.log('oggetto',oggetto)
+    const oggettovero = oggetto.data;
 
      console.log(oggettovero)
 
@@ -201,10 +202,11 @@ async function Controllo(params) {
         document.getElementById('altriAlbum').innerHTML += 
         `
          
-        <a href="Album_Page.html?id=${(oggettovero[index].album).id}" class="card cartecanz hoveraggio col-2 my-2" style="width: 12rem;">
+        <a  href="Album_Page.html?id=${(oggettovero[index].album).id}" class="card cartecanz hoveraggio col-2 my-2" style="width: 12rem;" >
                <img src="${(oggettovero[index].album).cover}" class="card-img-top mt-2 " alt="...">
                <div class="card-body">
                   <p class="card-text"><b class="d-block">${(oggettovero[index].album).title}</b> </p>
+                  <p>  ${oggettovero[index].title} </p>
                </div>
             </a> 
      `;
