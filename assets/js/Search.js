@@ -143,7 +143,7 @@ try {
   let imgID=document.getElementById("imgId");
   imgID.src=item[index].artist.picture_small;
 
-
+  
   music.play();
 
   console.log(item[index].id);
@@ -153,6 +153,12 @@ try {
 }
 
 
+}
+
+
+const stopA=()=>{
+  let music=document.getElementById("myAudio");
+  music.pause();
 }
 
 
